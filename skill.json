@@ -1,0 +1,27 @@
+{
+  "name": "genpark-moa-multi-model-arbiter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Mixture-of-Agents vote arbiter for consensus answer selection.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "moa",
+    "arbitration",
+    "multi-model"
+  ],
+  "inputs": {
+    "model_responses": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "consensus_answer": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
